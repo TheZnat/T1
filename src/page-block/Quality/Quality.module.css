@@ -1,0 +1,35 @@
+.quality{
+    margin-top: 103.5px;
+    margin-bottom: 100px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.quality__img{
+    width: 371px;
+    height: 625px
+}
+
+.quality__area__title{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 114%;
+    text-transform: capitalize;
+    color: #18181b;
+}
+
+.quality__area__list{
+    margin-top: 63.06px;
+    margin-bottom: 61px;
+}
+
+.quality__area__list__paragraph{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #676767;
+    margin-bottom: 27px;
+}

@@ -1,0 +1,43 @@
+.banner{
+    background: #5C4EAE;
+}
+
+.banner__text{
+    /* margin-top: 54px;
+    margin-bottom: 54.7px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.banner__text__item{
+    margin-top: 54px;
+    margin-bottom: 54.7px;
+}
+
+.banner__text__title{
+    margin-bottom: 10.8px;
+    margin-top: 0;
+    /* margin-bottom: 0px; */
+
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 125%;
+    text-align: center;
+    color: #fff;
+}
+
+.banner__text_center{
+    margin-left: 132px;
+    margin-right: 132px;
+}
+
+.banner__text__paragraph{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #c5bfed;
+}

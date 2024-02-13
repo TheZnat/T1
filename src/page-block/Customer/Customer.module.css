@@ -1,0 +1,33 @@
+.customer{
+    margin-top: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+
+    margin-bottom: 189px;
+
+    overflow: hidden;
+
+}
+
+.customer__title{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 57%;
+    color: #323142;
+    margin-bottom: 80px;
+}
+
+
+.reviews__area{
+    display: flex;
+    margin-left: 125px;
+    padding-bottom: 30px;
+   
+}
+
+
+
+
+

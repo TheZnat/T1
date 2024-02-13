@@ -1,0 +1,75 @@
+.card{
+    width: 395px;
+    height: 297px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 71px 36px 0 rgba(229, 229, 229, 0.7);
+    border: 1.25px solid #f4f4f6;
+    border-radius: 30px;
+    position: relative;
+    margin-left: 30.6px;
+}
+
+.card__img{
+    position: absolute;
+    top: 0px;
+    left: -30px;
+}
+
+.card__textArea{
+    margin-top: 190px;
+    padding-left: 34.07px;
+}
+
+.card__textArea__title{
+    padding-bottom: 1.75px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 162%;
+    color: #323142;
+}
+
+.card__textArea__label{
+    background: #f7edd0;
+    border-radius: 5px;
+    width: 44px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-weight: 400;
+    font-size: 12px;
+    color: #daa31a;
+
+}
+
+.card__textArea__info{
+    display: flex;
+}
+.card__textArea__info__time{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 133%;
+    color: #8e97a6;
+    /* margin-right: 6.45px; */
+}
+
+.card__textArea__info__ratingIcon{
+    background-image: url("../../assets/Star.png");
+    background-repeat: no-repeat;
+    width: 25.79px;
+    height: 25.79px;
+    margin-right: 6.45px;
+    margin-left: 6.45px;
+}
+ 
+
+.card__textArea__info__rating{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 133%;
+    color: #8e97a6;
+}

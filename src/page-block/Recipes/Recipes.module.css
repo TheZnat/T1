@@ -1,0 +1,43 @@
+.recipes{
+    margin-top: 100px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.recipes__title{
+    margin-bottom: 85.7px;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 57%;
+    color: #323142;
+
+}
+
+.recipes__cardsArea{
+    display: flex;
+    position: relative;
+}
+
+.recipes__link{
+    background-image: url("../../assets/arrow.png");
+    background-position:  100% 50%;
+    background-repeat: no-repeat;
+    padding-right: 27.9px;
+    position: absolute;
+    bottom: -65.7px;
+    right: 14.14px;
+   
+
+
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 226%;
+    letter-spacing: -0.01em;
+    color: #acadb9; 
+}
+

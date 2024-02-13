@@ -1,0 +1,10 @@
+.App{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F9F9;
+}
+
+.main{
+    flex-grow: 1; 
+}

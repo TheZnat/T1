@@ -1,0 +1,84 @@
+.reviews{
+    border-radius: 20px;
+    background-color: #fff;
+    width: 528px;
+    padding-top: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 38px;
+    box-shadow: 10px 4px 10px 5px rgba(229, 229, 229, 0.7);
+}
+
+
+.reviews__customerInfo{
+    /* padding-top: 38px; */
+    display: flex;
+    flex-direction: row;
+    width: 435px;
+
+    background-image: url("../../assets/commas.png");
+    background-repeat: no-repeat;
+    background-position: 100% 12%;
+
+}
+
+.reviews__customerInfo__img{
+    width: 71px;
+    height: 71px;
+    margin-right: 20.8px;
+}
+
+
+.reviews__customerInfo__description{
+    margin-bottom: 31.96px;
+
+}
+
+.reviews__customerInfo__description__name{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #030314;
+}
+
+.reviews__customerInfo__description__experience{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156%;
+    color: #5e5d5d;
+  
+}
+
+
+.reviews__customerInfo__paragraph{
+    width: 442px;
+ 
+    margin-bottom: 100px;
+    text-wrap: wrap;
+    color: #636363;
+
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    text-align: justify;
+
+   
+}
+
+
+.reviews__rating{
+    position: absolute;
+    bottom: 43px;
+    left: 35px;
+    
+
+}
+
+.reviews__rating__img{
+    width: 23px;
+    height: 23px;
+    margin-left: 5.75px;
+}
