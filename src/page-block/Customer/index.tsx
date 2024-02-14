@@ -34,6 +34,8 @@ const Customer = () => {
           ))}
         </div>
       </div>
+
+      <div className={styles.scrolly}></div>
     </section>
   );
 };

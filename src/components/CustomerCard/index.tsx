@@ -41,12 +41,18 @@ const CustomerCard = ({ name, experience, imageUrl, text, rating }: Props) => {
           </div>
         </div>
       )}
-
       <p className={styles.reviews__customerInfo__paragraph}>{text}</p>
-
       <div className={styles.reviews__rating}>
         {ratingСalculation(rating).map(
-          (data, index) => data === 1 && <img alt="рейтинг улуги" src={StarRating} key={index} className={styles.reviews__rating__img} />
+          (data, index) =>
+            data === 1 && (
+              <img
+                alt="рейтинг улуги"
+                src={StarRating}
+                key={index}
+                className={styles.reviews__rating__img}
+              />
+            )
         )}
       </div>
     </div>

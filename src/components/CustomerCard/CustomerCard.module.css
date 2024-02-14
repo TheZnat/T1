@@ -11,7 +11,6 @@
     box-shadow: 10px 4px 10px 5px rgba(229, 229, 229, 0.7);
 }
 
-
 .reviews__customerInfo{
     /* padding-top: 38px; */
     display: flex;
@@ -48,24 +47,19 @@
     font-size: 16px;
     line-height: 156%;
     color: #5e5d5d;
-  
 }
 
 
 .reviews__customerInfo__paragraph{
     width: 442px;
- 
-    margin-bottom: 100px;
+    margin-bottom: 96px;
     text-wrap: wrap;
     color: #636363;
-
     font-style: italic;
     font-weight: 400;
     font-size: 18px;
     line-height: 145%;
-    text-align: justify;
-
-   
+    text-align: justify;   
 }
 
 
@@ -73,8 +67,6 @@
     position: absolute;
     bottom: 43px;
     left: 35px;
-    
-
 }
 
 .reviews__rating__img{

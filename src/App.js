@@ -8,6 +8,7 @@ import Quality from "./page-block/Quality/index.tsx";
 import Recipes from "./page-block/Recipes/index.tsx";
 import Purchase from "./page-block/Purchase/index.tsx";
 import Customer from "./page-block/Customer/index.tsx";
+import Questions from "./page-block/Questions/index.tsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Recipes />
         <Purchase />
         <Customer />
+        <Questions />
       </main>
       <Footer />
     </div>

@@ -9,6 +9,23 @@
     margin-left: 30.6px;
 }
 
+
+.card:hover{
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
 .card__img{
     position: absolute;
     top: 0px;
