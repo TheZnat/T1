@@ -1,18 +1,11 @@
 .header{
     flex-shrink: 0;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .header__area{
     display: flex;
     flex-direction: row;
-   
     margin: 48px 97px 24.6px 97px;
-    /* width: 1248px; */
-    /* height: 62px */
-
 }
 
 .header__menu{
@@ -21,7 +14,13 @@
 }
 
 .header__menu__item{
+    font-family: var(--font-header);
     list-style-type: none;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #606060;
 }
 
 .logo{

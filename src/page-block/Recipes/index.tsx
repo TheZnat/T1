@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Recipes.module.css";
-import Card from "../../components/CardEat/index.tsx";
+import Card from "../../components/CardEat";
 
 const Recipes = () => {
   const data = [
@@ -27,12 +27,12 @@ const Recipes = () => {
   return (
     <section className={styles.recipes}>
       <p className={styles.recipes__title}>
-        Our Top <span>Recipes</span>
+        Our Top <span className="highlight">Recipes</span>
       </p>
 
       <div className={styles.recipes__cardsArea}>
-        {data.map((obj) => (
-          <Card {...obj} />
+        {data.map((obj, index) => (
+          <Card {...obj} key={index} />
         ))}
         <div className={styles.recipes__link}>View All</div>
       </div>

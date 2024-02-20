@@ -4,17 +4,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-  
+    justify-content: center; 
 }
 
 .recipes__title{
+    font-family: var(--font-titleSecond);
     margin-bottom: 85.7px;
     font-weight: 600;
     font-size: 45px;
     line-height: 57%;
     color: #323142;
-
 }
 
 .recipes__cardsArea{
@@ -30,10 +29,6 @@
     position: absolute;
     bottom: -65.7px;
     right: 14.14px;
-   
-
-
-
     font-weight: 500;
     font-size: 20px;
     line-height: 226%;

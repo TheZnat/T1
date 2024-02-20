@@ -5,7 +5,7 @@ const Questions = () => {
   return (
     <section className={style.area}>
       <p className={style.area__title}>
-        Frequently Asked <br></br><span>Questions</span>
+        Frequently Asked <br></br><span className="highlight">Questions</span>
       </p>
     </section>
   );

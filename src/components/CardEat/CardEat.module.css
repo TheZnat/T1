@@ -38,6 +38,7 @@
 }
 
 .card__textArea__title{
+    font-family: var(--font-titleSecond);
     padding-bottom: 1.75px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -67,14 +68,19 @@
     display: flex;
 }
 .card__textArea__info__time{
+    font-family: var(--font-miniInfo);
     font-weight: 400;
     font-size: 19px;
     line-height: 133%;
     color: #8e97a6;
-    /* margin-right: 6.45px; */
 }
 
 .card__textArea__info__ratingIcon{
+    font-family: var(--font-miniInfo);
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 133%;
+    color: #8e97a6;
     background-image: url("../../assets/Star.png");
     background-repeat: no-repeat;
     width: 25.79px;

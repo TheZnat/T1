@@ -16,7 +16,6 @@ const MiniCard = ({ imageUrl, title, status, time }: Props) => {
         alt="картика еды"
         className={styles.miniCards__img}
       />
-
       <div className={styles.miniCards__textArea}>
         <p className={styles.miniCards__textArea__title}>{title}</p>
         <p className={styles.miniCards__textArea__status}>{status}</p>

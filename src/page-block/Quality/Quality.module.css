@@ -7,6 +7,9 @@
     align-items: center;
 }
 
+.quality__area{
+
+}
 
 .quality__img{
     width: 371px;
@@ -14,7 +17,8 @@
 }
 
 .quality__area__title{
-    font-weight: 700;
+    font-family: var(--font-titleSecond);
+    font-weight: 700; 
     font-size: 50px;
     line-height: 114%;
     text-transform: capitalize;
@@ -27,6 +31,7 @@
 }
 
 .quality__area__list__paragraph{
+    font-family: var(--font-paragraph);
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;

@@ -13,6 +13,7 @@
 }
 
 .customer__title{
+    font-family: var(--font-title);
     font-weight: 600;
     font-size: 45px;
     line-height: 57%;

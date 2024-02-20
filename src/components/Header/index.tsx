@@ -13,6 +13,7 @@ const Header = () => {
                 />
                 <menu className={styles.header__menu}>
                 <li className={styles.header__menu__item}>Recipes</li>
+                <li className={styles.header__menu__item}>FAQ</li>
                 <li className={styles.header__menu__item}>Blog</li>
                 </menu>
             </div>     

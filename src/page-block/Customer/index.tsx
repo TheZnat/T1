@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Customer.module.css";
-import CustomerCard from "../../components/CustomerCard/index.tsx";
+import CustomerCard from "../../components/CustomerCard";
 
 const Customer = () => {
   const data = [
@@ -24,7 +24,7 @@ const Customer = () => {
   return (
     <section className={styles.customer}>
       <h2 className={styles.customer__title}>
-        <span>Customer</span> Say
+        <span className="highlight">Customer</span> Say
       </h2>
 
       <div className={styles.test}>

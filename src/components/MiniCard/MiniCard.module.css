@@ -1,18 +1,15 @@
 .miniCards{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 12px;
     width: 345px;
     height: 88px;
-    
     box-shadow: 0 20px 30px 0 rgba(70, 70, 70, 0.1);
     background: #fff;
-
     position: relative;
     margin-bottom: 15.05px;
-
 }
 
 .miniCards__img{
@@ -27,6 +24,7 @@
 }
 
 .miniCards__textArea__title{
+    font-family: var(--font-title);
     font-weight: 600;
     font-size: 19px;
     line-height: 140%;
@@ -35,6 +33,7 @@
 }
 
 .miniCards__textArea__status{
+    font-family: var(--font-cardSubtitle);
     font-weight: 500;
     font-size: 12px;
     line-height: 140%;
@@ -45,7 +44,7 @@
     position: absolute;
     bottom: 10.01px;
     right: 17.25px;
-
+    font-family: var(--font-cardSubtitle);
     font-weight: 500;
     font-size: 13px;
     line-height: 140%;

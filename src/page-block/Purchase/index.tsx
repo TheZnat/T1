@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./Purchase.module.css";
 import Info from "../../assets/savings.png";
-import MiniCard from "../../components/MiniCard/index.tsx";
-
-import Chiken from "../../assets/Purchases/ChickenHell.png";
+import MiniCard from "../../components/MiniCard";
 
 const Purchase = () => {
   const data = [
@@ -31,11 +29,11 @@ const Purchase = () => {
     <section className={styles.purchase}>
       <div className={styles.purchase__textArea}>
         <p className={styles.purchase__textArea__title}>
-          Control <span>Purchases</span>
+          Control <span className="highlight">Purchases</span>
           <br></br> Via Dashboard
         </p>
-        {data.map((obj) => (
-          <MiniCard {...obj} />
+        {data.map((obj, index) => (
+          <MiniCard {...obj} key={index}/>
         ))}
       </div>
 

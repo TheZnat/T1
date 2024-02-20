@@ -13,7 +13,7 @@ const Quality = () => {
 
       <div className={styles.quality__area}>
         <p className={styles.quality__area__title}>
-          Premium <span>Quality</span>
+          Premium <span className="highlight">Quality</span>
           <br></br>
           For Your Health
         </p>
