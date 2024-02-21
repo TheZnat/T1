@@ -13,7 +13,6 @@ type Props = {
 const CustomerCard = ({ name, experience, imageUrl, text, rating }: Props) => {
   const ratingСalculation = (num: number) => {
     let arrayRating = [0, 0, 0, 0, 0];
-
     for (let i = 0; i < num; i++) {
       arrayRating[i] = 1;
     }
@@ -28,6 +27,7 @@ const CustomerCard = ({ name, experience, imageUrl, text, rating }: Props) => {
             className={styles.reviews__customerInfo__img}
             alt="фото пользователя"
             src={require(`../../assets/${imageUrl}.png`)}
+            loading="lazy"
           />
           <div className={styles.reviews__customerInfo__description}>
             <p className={styles.reviews__customerInfo__description__name}>

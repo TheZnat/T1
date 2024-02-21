@@ -10,6 +10,7 @@ const Header = () => {
                 src={Logo}
                 alt='eatly'
                 className={styles.logo}
+                loading="eager"
                 />
                 <menu className={styles.header__menu}>
                 <li className={styles.header__menu__item}>Recipes</li>

@@ -8,7 +8,6 @@ import Purchase from "src/page-block/Purchase";
 import Quality from "src/page-block/Quality";
 import Questions from "src/page-block/Questions";
 import Recipes from "src/page-block/Recipes";
-import style from "./Home.module.css"
 
 const Home = () => {
   return (

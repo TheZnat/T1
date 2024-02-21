@@ -9,15 +9,14 @@ const Quality = () => {
         className={styles.quality__img}
         alt="картинка с теоефоном"
         src={Mobily}
+        loading="lazy"
       />
-
       <div className={styles.quality__area}>
         <p className={styles.quality__area__title}>
           Premium <span className="highlight">Quality</span>
           <br></br>
           For Your Health
         </p>
-
         <ul className={styles.quality__area__list}>
           <li className={styles.quality__area__list__paragraph}>
             Premium quality food is made with ingredients that <br></br>

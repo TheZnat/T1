@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import Logo from "../../assets/Logo.svg";
-
 import Facebook from "../../assets/socialMedia/facebook.png";
 import Instagram from "../../assets/socialMedia/instagram.png";
 import Linkedin from "../../assets/socialMedia/linkedin.png";
@@ -24,23 +23,25 @@ const Footer = () => {
             className={styles.area__bottom__iconArea__item_instagram}
             src={Instagram}
             alt="Instagram"
+            loading="lazy"
           />
           <img
             className={styles.area__bottom__iconArea__item_linkedin}
             src={Linkedin}
             alt="Linkedin"
+            loading="lazy"
           />
-
           <img
             className={styles.area__bottom__iconArea__item_facebook}
             src={Facebook}
             alt="Facebook"
+            loading="lazy"
           />
-
           <img
             className={styles.area__bottom__iconArea__item_twitter}
             src={Twitter}
             alt="Twitter"
+            loading="lazy"
           />
         </div>
       </div>

@@ -15,6 +15,7 @@ const MiniCard = ({ imageUrl, title, status, time }: Props) => {
         src={require(`../../assets/Purchases/${imageUrl}.png`)}
         alt="картика еды"
         className={styles.miniCards__img}
+        loading="lazy"
       />
       <div className={styles.miniCards__textArea}>
         <p className={styles.miniCards__textArea__title}>{title}</p>

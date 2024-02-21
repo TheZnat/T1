@@ -36,8 +36,7 @@ const Purchase = () => {
           <MiniCard {...obj} key={index}/>
         ))}
       </div>
-
-      <img alt="Purchases" src={Info} className={styles.purchase__img} />
+      <img alt="Purchases" loading="lazy" src={Info} className={styles.purchase__img} />
     </section>
   );
 };
