@@ -4,9 +4,7 @@
     justify-content: center;
     align-items: center; 
     flex-direction: column;
-
     margin-bottom: 189px;
-
     overflow: hidden;
     position: relative;
 
@@ -23,24 +21,18 @@
 
 
 .reviews__area{
-    display: flex;
-    align-items: flex-start;
+    /* display: flex;
+    align-items: flex-start; */
     margin-left: 125px;
     padding-bottom: 30px;
+    /* width: 1731px;
+    height: 307px; */
    
 }
 
-.scrolly{
-    position: absolute;
-    top: 458px;
-    right: 82px;
-    background: #6c5fbc;
-    opacity: 0.2;
-    border-radius: 50px;
-    width: 667px;
-    height: 11px;
+
+.swiper {
+    width: 1731px;
+    height: 307px;
 }
-
-
-
-
+  

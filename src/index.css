@@ -8,6 +8,7 @@
   --font-titleSecond: "Poppins Bold", sans-serif;
   --font-miniInfo: "Manrope Regular", sans-serif;
   --font-cardSubtitle: "Poppins Medium", sans-serif;
+  --font-textQuestion: "Poppins Regular", sans-serif;
 
 }
 
@@ -55,6 +56,13 @@
 
 @font-face {
   font-family: var(--font-cardSubtitle);
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(-font-textQuestion);
   src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
   font-style: normal;
   font-display: swap;

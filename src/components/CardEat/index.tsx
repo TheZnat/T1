@@ -14,7 +14,7 @@ const Card = ({ title, time, imageUrl, rating }: Props) => {
       <img
         className={styles.card__img}
         alt="карточка еды"
-        src={require(`../../assets/Resturent/${imageUrl}.png`)}
+        src={imageUrl}
         loading="lazy"
       />
       <div className={styles.card__textArea}>

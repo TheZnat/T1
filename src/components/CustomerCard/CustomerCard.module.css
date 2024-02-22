@@ -16,17 +16,10 @@
     display: flex;
     flex-direction: row;
     width: 435px;
-
     background-image: url("../../assets/commas.png");
     background-repeat: no-repeat;
     background-position: 100% 12%;
 
-}
-
-.reviews__customerInfo__img{
-    width: 71px;
-    height: 71px;
-    margin-right: 20.8px;
 }
 
 
@@ -42,18 +35,11 @@
     color: #030314;
 }
 
-.reviews__customerInfo__description__experience{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 156%;
-    color: #5e5d5d;
-}
-
 
 .reviews__customerInfo__paragraph{
     font-family: var(--font-customer);
     width: 442px;
-    margin-bottom: 96px;
+    margin-bottom: 51px;
     text-wrap: wrap;
     color: #636363;
     font-style: italic;
@@ -64,14 +50,4 @@
 }
 
 
-.reviews__rating{
-    position: absolute;
-    bottom: 43px;
-    left: 35px;
-}
 
-.reviews__rating__img{
-    width: 23px;
-    height: 23px;
-    margin-left: 5.75px;
-}

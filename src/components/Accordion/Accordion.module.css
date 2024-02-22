@@ -1,0 +1,47 @@
+.list__item{
+    margin-bottom: 28px;
+    position: relative;
+
+}
+
+.list__item__title{
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 253%;
+    color: #323142;
+    margin-bottom: 19.54px;
+}
+
+.list__item__paragraph{
+    font-family: var(--font-textQuestion);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #686868;
+    margin-bottom: 43.27px;
+    width: 793px;
+}
+
+.list__item__border{
+    border: 1.06px solid #adadad;
+    width: 1152px;
+}
+
+.item_button{
+    position: absolute;
+    top: 15.26px;
+    right: 13.19px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: center;
+    color: #fff;
+    background-color: #6c5fbc;
+    border-radius: 100%;
+    width: 30.12px;
+    height: 30.12px;
+    font-size: 20px;
+}

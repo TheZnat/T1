@@ -1,41 +1,57 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 import styles from "./Customer.module.css";
 import CustomerCard from "../../components/CustomerCard";
 
 const Customer = () => {
-  const data = [
-    {
-      name: "Alexander R.",
-      experience: " 01 Year With Us",
-      imageUrl: "reviews",
-      text: "Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time",
-      rating: 5,
-    },
-    {
-      text: "Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time",
-      rating: 1,
-    },
-    {
-      text: "Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time",
-      rating: 3,
-    },
-  ];
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://dummyjson.com/comments")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setData(data.comments);
+      });
+  }, []);
 
   return (
     <section className={styles.customer}>
       <h2 className={styles.customer__title}>
         <span className="highlight">Customer</span> Say
       </h2>
-
       <div className={styles.test}>
         <div className={styles.reviews__area}>
-          {data.map((obj, index) => (
-            <CustomerCard {...obj} key={index} />
-          ))}
+          <Swiper
+            slidesPerView={3}
+            centeredSlides={true}
+            spaceBetween={30}
+            grabCursor={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className={styles.swiper}
+          >
+            {data.map(
+              (obj, index) =>
+                index <= 6 && (
+                  <SwiperSlide key={index}>
+                    <CustomerCard
+                      name={obj["user"]["username"]}
+                      text={obj["body"]}
+                      key={index}
+                    />
+                  </SwiperSlide>
+                )
+            )}
+          </Swiper>
         </div>
       </div>
-
-      <div className={styles.scrolly}></div>
     </section>
   );
 };

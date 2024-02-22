@@ -1,40 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Recipes.module.css";
 import Card from "../../components/CardEat";
 
 const Recipes = () => {
-  const data = [
-    {
-      title: "The Chicken King",
-      time: 24,
-      imageUrl: "TheChickenKing",
-      rating: 4.8,
-    },
-    {
-      title: "The Burger King",
-      time: 24,
-      imageUrl: "TheBurgerKing",
-      rating: 4.9,
-    },
-    {
-      title: "The Chicken King",
-      time: 24,
-      imageUrl: "TheChickenKing",
-      rating: 4.8,
-    },
-  ];
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://dummyjson.com/recipes/meal-type/snack")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setData(data.recipes);
+      });
+  }, []);
 
   return (
-    <section className={styles.recipes}>
+    <section className={styles.recipes} id="Recipes">
       <p className={styles.recipes__title}>
         Our Top <span className="highlight">Recipes</span>
       </p>
-
       <div className={styles.recipes__cardsArea}>
-        {data.map((obj, index) => (
-          <Card {...obj} key={index} />
-        ))}
-        <div className={styles.recipes__link}>View All</div>
+        {data
+          .sort((x, y) => y["rating"] - x["rating"])
+          .map((obj, index) => (
+            <Card
+              title={obj["name"]}
+              time={obj["cookTimeMinutes"]}
+              imageUrl={obj["image"]}
+              rating={obj["rating"]}
+              key={index}
+            />
+          ))}
       </div>
     </section>
   );
