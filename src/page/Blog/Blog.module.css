@@ -1,0 +1,27 @@
+.area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 95px;
+    margin-bottom: 285px;
+    flex-direction: column;
+
+}
+
+.area__title{
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 120%;
+    color: #323142;
+    margin-bottom: 75px;
+}
+
+.cardsArea{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 46px;
+
+}
+

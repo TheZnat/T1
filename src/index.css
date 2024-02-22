@@ -62,7 +62,7 @@
 }
 
 @font-face {
-  font-family: var(-font-textQuestion);
+  font-family: var(--font-textQuestion);
   src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
   font-style: normal;
   font-display: swap;
@@ -102,4 +102,9 @@ p{
 
 .highlight{
   color: #5c4eae;
+}
+
+
+a, u {
+  text-decoration: none;
 }

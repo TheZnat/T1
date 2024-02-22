@@ -12,14 +12,10 @@
 }
 
 .reviews__customerInfo{
-    /* padding-top: 38px; */
-    display: flex;
-    flex-direction: row;
     width: 435px;
     background-image: url("../../assets/commas.png");
     background-repeat: no-repeat;
     background-position: 100% 12%;
-
 }
 
 
