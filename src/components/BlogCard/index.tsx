@@ -17,7 +17,7 @@ const BlogCard = ({ title, text, rating, teg }: Props) => {
         <div className={style.card__info__containerTeg}>
           {teg.map((dataTeg, index, array) => (
             <p key={index} className={style.card__info__containerTeg_teg}>
-              # {index + 1 !== array.length ? `${dataTeg}, ` : `${dataTeg}`}
+              #{index + 1 !== array.length ? `${dataTeg}, ` : `${dataTeg}`}
             </p>
           ))}
         </div>
