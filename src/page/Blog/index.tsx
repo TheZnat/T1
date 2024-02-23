@@ -27,10 +27,6 @@ const Blog = () => {
   const lastCardsIndex = currentPage * perPage;
   const firstCardsIndex = lastCardsIndex - perPage;
   const currentCards = data.slice(firstCardsIndex, lastCardsIndex);
-  // console.log(currentCards.length);
-
-
-
   const nextPage = () => setCurrentPage((prev) => prev + 1);
   const prevPage = () => setCurrentPage((prev) => prev - 1);
 
@@ -58,8 +54,28 @@ const Blog = () => {
             )}
           </div>
           <div className={style.buttonArea}>
-            <div className={style.prevPage} onClick={prevPage}></div>
-            <div className={`${style.prevPage} ${style.nextPage}`} onClick={nextPage}></div>
+            {firstCardsIndex === 0 ? (
+              <div className={`${style.arrow} ${style.arrowLeftBlock}`}></div>
+            ) : (
+              <div
+                className={`${style.arrow} ${style.arrowLeftActive}`}
+                onClick={prevPage}
+              ></div>
+            )}
+
+            {data.length < lastCardsIndex ? (
+              <div className={`${style.arrow} ${style.arrowRightBlock}`}></div>
+            ) : (
+              <div
+                className={`${style.arrow} ${style.arrowRightActive}`}
+                onClick={nextPage}
+              ></div>
+            )}
+
+            {/* <div
+              className={`${style.prevPage} ${style.nextPage}`}
+              onClick={nextPage}
+            ></div> */}
           </div>
         </div>
       </main>

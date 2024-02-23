@@ -31,15 +31,31 @@
     gap:79px;
 }
 
-.prevPage{
+
+.arrow{
     cursor: pointer;
-    background-image: url("../../assets/arrowBlog.png");
+    background-size: contain;
     background-repeat: no-repeat;
     width: 30px;
-    height: 30px;
-
+    height: 30px;  
 }
 
-.nextPage{
-    transform: rotate(180deg)
+
+
+.arrowLeftBlock{
+    background-image: url("../../assets/LeftBlock.png");
+}
+
+.arrowLeftActive{
+    background-image: url("../../assets/LeftActive.png");
+}
+
+
+.arrowRightBlock{
+    background-image: url("../../assets/rightBlock.png");
+}
+
+
+.arrowRightActive{
+    background-image: url("../../assets/rightActive.png");
 }
