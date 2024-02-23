@@ -71,11 +71,6 @@ const Blog = () => {
                 onClick={nextPage}
               ></div>
             )}
-
-            {/* <div
-              className={`${style.prevPage} ${style.nextPage}`}
-              onClick={nextPage}
-            ></div> */}
           </div>
         </div>
       </main>
